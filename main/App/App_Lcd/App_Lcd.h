@@ -8,4 +8,5 @@
 
 #include <stdint.h>
 
+void stars_init(void);
 void App_Solar_Render(void);
