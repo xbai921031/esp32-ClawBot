@@ -11,7 +11,7 @@
 | Quit monitor                    |  Ctrl + ]                                      |
 | Monitor and logging             | idf.py monitor \| Tee-Object -FilePath log.txt |
 | Remove build folder             | Remove-Item -Recurse -Force build              |
-| Full clean                      |  idf.py fullclean                              |
+| Full clean                      | idf.py fullclean                              |
 
 ## lvgl integration
 

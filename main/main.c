@@ -4,15 +4,18 @@
  */
 
 #include "Os.h"
-#include "Bsp/Bsp_Lcd/Bsp_Lcd.h"
-#include "App/App_Lcd/App_Lcd.h"
+#include "bsp/bsp_lcd/bsp_lcd.h"
 #include "lvgl.h"
+#include "esp_wifi.h"
+#include "esp_netif.h"
+#include "nvs_flash.h"
 
 void app_main(void)
 {
     lv_init();
     bsp_lcd_init();
-    stars_init();
+    nvs_flash_init();
+    esp_netif_init();
     OS_Init();
     OS_Start();
 }

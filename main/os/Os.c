@@ -3,11 +3,9 @@
  *    Date: 2026/01/18
  */
 
-#include "Os.h"
-#include "Os_Alarm.h"
+#include "os.h"
+#include "os_alarm.h"
 #include "esp_rom_sys.h"
-//#include "Bsp/Bsp_Lcd/Bsp_Lcd.h"
-#include "App/App_Lcd/App_Lcd.h"
 
 TaskHandle_t OsTask1Handle;
 TaskHandle_t OsTask2Handle;
@@ -26,7 +24,6 @@ static void OsTask1(void* arg)
     while(1)
     {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-        App_Solar_Render();
         //esp_rom_printf("[Task1] time=%llu\r\n", esp_timer_get_time());
     }
 }
