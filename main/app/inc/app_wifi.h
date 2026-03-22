@@ -1,4 +1,3 @@
-
 /*
  *    Autor: xbai
  *    Date: 2026/03/12
@@ -9,10 +8,6 @@
 #include "esp_wifi.h"
 #include "esp_netif.h"
 #include "nvs_flash.h"
-
-
-#define WIFI_SSID        
-#define WIFI_PASSWORD    
 
 
 void wifi_init(void);

@@ -5,6 +5,7 @@
 
 #include "app_wifi.h"
 #include "esp_rom_sys.h"
+#include "mimi_config.h"
 
 void wifi_init(void)
 {

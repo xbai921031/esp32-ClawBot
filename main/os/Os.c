@@ -15,7 +15,7 @@ StaticTask_t OsTask1TCB;
 StaticTask_t OsTask2TCB;
 StaticTask_t OsTask3TCB;
 
-StackType_t OsTask1Stack[2048];
+StackType_t OsTask1Stack[8192];
 StackType_t OsTask2Stack[2048];
 StackType_t OsTask3Stack[2048];
 
@@ -51,7 +51,7 @@ void OS_Init(void)
     OsTask1Handle = xTaskCreateStatic(
         OsTask1,
         "OsTask1",
-        2048,
+        8192,
         NULL,
         4,
         OsTask1Stack,

@@ -3,18 +3,20 @@ idf_component_register(
         "main.c"
         "os/os_alarm.c"
         "os/os.c"
-        "bsp/bsp_lcd/bsp_lcd.c"
-        "app/app_wifi/app_wifi.c"
+        "bsp/src/bsp_lcd.c"
+        "app/src/app_wifi.c"
+        "app/src/app_webserver.c"
     INCLUDE_DIRS
         "."
         "os"
-        "bsp/bsp_lcd"
-        "app/app_wifi"
+        "bsp/inc"
+        "app/inc"
     REQUIRES
         lvgl
         esp_wifi
         esp_netif
         nvs_flash
+        esp_http_server
 )
 
 add_compile_definitions(LV_CONF_INCLUDE_SIMPLE)
