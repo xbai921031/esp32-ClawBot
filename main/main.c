@@ -4,15 +4,15 @@
  */
 
 #include "Os.h"
-#include "bsp_lcd.h"
+#include "lcd.h"
 #include "lvgl.h"
-#include "app_wifi.h"
-#include "app_webserver.h"
+#include "wifi.h"
+#include "webserver.h"
 
 void app_main(void)
 {
     lv_init();
-    bsp_lcd_init();
+    lcd_init();
     wifi_init();
     start_webserver();
     OS_Init();

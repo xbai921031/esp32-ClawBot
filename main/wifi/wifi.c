@@ -3,9 +3,9 @@
  * Date  : 2026/03/12
  */
 
-#include "app_wifi.h"
+#include "wifi.h"
 #include "esp_rom_sys.h"
-#include "mimi_config.h"
+#include "clawbot_config.h"
 
 void wifi_init(void)
 {

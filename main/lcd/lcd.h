@@ -13,6 +13,6 @@
 
 extern esp_lcd_panel_handle_t panel_handle;
 
-void bsp_lcd_init(void);
-void bsp_lcd_fill_color(uint16_t color);
+void lcd_init(void);
+void lcd_fill_color(uint16_t color);
 

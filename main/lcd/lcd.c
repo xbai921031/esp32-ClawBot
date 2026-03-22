@@ -3,8 +3,6 @@
  * Date  : 2026/01/19
  */
 
-#include "bsp_lcd.h"
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
@@ -14,6 +12,7 @@
 
 #include "esp_heap_caps.h"
 #include "esp_log.h"
+#include "lcd.h"
 
 #define LCD_SPI_HOST   SPI2_HOST
 
@@ -30,7 +29,7 @@
 
 esp_lcd_panel_handle_t panel_handle = NULL;
 
-void bsp_lcd_init(void)
+void lcd_init(void)
 {
     /* SPI init */
     spi_bus_config_t buscfg = {
@@ -75,7 +74,7 @@ void bsp_lcd_init(void)
 }
 
 #if 0
-void bsp_lcd_fill_color(uint16_t color)
+void lcd_fill_color(uint16_t color)
 {
     uint16_t *buf = heap_caps_malloc(LCD_WIDTH * BLOCK_HEIGHT * sizeof(uint16_t), MALLOC_CAP_DMA);
     if(!buf)
