@@ -3,8 +3,8 @@
  *    Date: 2026/01/18
  */
 
-#include "os.h"
-#include "os_alarm.h"
+#include "Os.h"
+#include "Os_Alarm.h"
 #include "esp_rom_sys.h"
 #include "agent_loop.h"
 

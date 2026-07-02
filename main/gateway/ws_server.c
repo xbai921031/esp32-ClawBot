@@ -77,7 +77,6 @@ void start_ws_server(void)
         .method     = HTTP_GET,
         .handler    = ws_handler,
         .user_ctx   = NULL,
-        .is_websocket = true
     };
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.server_port = WS_PORT;

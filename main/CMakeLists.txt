@@ -1,8 +1,8 @@
 idf_component_register(
     SRCS
         "main.c"
-        "os/os_alarm.c"
-        "os/os.c"
+        "os/Os_Alarm.c"
+        "os/Os.c"
         "lcd/lcd.c"
         "wifi/wifi.c"
         "gateway/ws_server.c"

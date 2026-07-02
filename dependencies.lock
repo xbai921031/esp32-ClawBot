@@ -12,7 +12,7 @@ dependencies:
   idf:
     source:
       type: idf
-    version: 5.5.3
+    version: 6.0.1
   jbrilha/esp_lcd_st7789:
     component_hash: 95b5a7ed16de15546d37d5ab4abce3b1d8b9ed418ec8b6d06ac8890f082e4188
     dependencies: []
@@ -26,4 +26,4 @@ direct_dependencies:
 - jbrilha/esp_lcd_st7789
 manifest_hash: 553dda36ae1995f12e09bb1248a587a3b7f2d2af6f6c426938f243b4854369df
 target: esp32s3
-version: 2.0.0
+version: 3.0.0
