@@ -16,3 +16,4 @@ dependencies:
   #   public: true
   jbrilha/esp_lcd_st7789: ^1.0.0
   espressif/cjson: '*'
+  espressif/esp_websocket_client: ^1.4.0

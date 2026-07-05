@@ -1,32 +1,27 @@
 idf_component_register(
     SRCS
         "main.c"
-        "os/Os_Alarm.c"
-        "os/Os.c"
-        "lcd/lcd.c"
-        "wifi/wifi.c"
-        "gateway/ws_server.c"
-        "bus/message_bus.c"
-        "agent/agent_loop.c"
-        "llm/llm_proxy.c"
+        "app_fs.c"
+        "edge_agent_version.c"
+        "http_server_adapter.c"
     INCLUDE_DIRS
         "."
-        "os"
-        "lcd"
-        "wifi"
-        "gateway"
-        "bus"
-        "agent"
-        "llm"
     REQUIRES
-        lvgl
+        app_claw
+        app_config
+        settings
+        claw_ramfs
+        claw_utils
+        official_http_server
         esp_wifi
         esp_netif
+        esp_event
         nvs_flash
-        esp_http_server
-        esp_http_client
-        esp-tls
-        mbedtls
+        fatfs
+        vfs
+        wear_levelling
+        cjson
+    PRIV_REQUIRES
+        esp_system
+        esp_app_format
 )
-
-add_compile_definitions(LV_CONF_INCLUDE_SIMPLE)
